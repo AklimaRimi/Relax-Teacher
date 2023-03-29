@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        color: rgb(227, 225, 225);
+    }
+    .subject{
+        width: 99vw;
+        height: 100px;
+        font-size: 30px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    .container{
+        width: 99vw;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        flex-direction: row;
+    }
+    .two-col1{
+        width: 900px;
+        height: 82vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        /* border-radius: 20px; */
+        /* border: 1px solid white; */
+    }
+    .two-col2{
+        width: 600px;
+        height: 82vh;
+        border-radius: 20px;
+        border: 1px solid white;
+        margin: 5px;
+
+    }
+    .two-row1{
+        height: 400px;
+        width: 880px;
+        border: 2px solid white;
+        border-radius: 20px;
+        margin: 5px;
+    }
+    .two-row2{
+        height: 200px;
+        width: 880px;
+        border: 1px solid white;
+        border-radius: 20px;
+    }
+    .class{
+        margin-left: 10px;
+        text-align: center;
+    }
+    .vid{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
+    .summ{
+        padding: 10px;
+        text-align: justify;
+    }
+</style>
+<body>
+    <div class="subject"> 
+        <h1>Subject</h1>
+    </div>
+
+    <div class="container">
+        <div class="two-col1">
+            <div class="two-row1">
+                <div class="class"><h3>Class</h3></div>
+                <div class="vid">
+                    <iframe width="870px" height="320px"
+                        src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                    </iframe>
+                </div>
+            </div>
+            <div class="two-row2">
+                <div class="class"><h3>Summary</h3></div>
+                <div class="summ">
+                    <p>Since I first published this little script it had a bit of community support and a few good folks worked on expanding it, so not it can do a bit more than just splitting videos in equal chunks. It can split videos into unequal chunks using a manifest file, pass on extra options to FFMPEG to say do additional processing. Check out the readme file for all the options.</p>
+                </div>
+            </div>
+        </div>
+        <div class="two-col2">
+            <div class="class"><h3>Context</h3></div>
+            <div class="summ">
+                <p>
+                    UPDATE 2: Well this script has outlived my old blog looks like. Parking the original article about it here.
+
+                    UPDATE: The source code for this simple script has been moved to GitHub, get it here: https://github.com/c0decracker/video-splitter
+                    
+                    Recently I needed to upload a whole bunch of long video files. Maximum allowed length for each video was just few minutes, while the actual length of files I tried to upload was about an hour long each. FFmpeg is really great for splitting the video files and Python is quite handy for automating the task.
+                    
+                    Naturally combining the two together in this handy little script. The script takes a video file and a chunk size in seconds and splits the video file into chunks using ffmpeg, so each chunk is self contained, playable video.
+                    
+                    Since I first published this little script it had a bit of community support and a few good folks worked on expanding it, so not it can do a bit more than just splitting videos in equal chunks. It can split videos into unequal chunks using a manifest file, pass on extra options to FFMPEG to say do additional processing. Check out the readme file for all the options. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
