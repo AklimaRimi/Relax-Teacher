@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Class</title>
+</head>
+<style>
+    body{
+        background-color: black;    
+        color:   rgb(227, 225, 225)
+    }
+    .logo{
+        font-size: 35px;
+        font-weight: 700;
+        width: 100vw;
+        height: 100px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        height:80vh;
+        width: 100vw;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .video{
+        width: 500px;
+        height: 400px;
+        border: 1px solid rgb(227, 225, 225);
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+    .vidup{
+        margin-top: 100px;
+    }
+    .button{
+        padding: 10px;
+        background-color: rgb(227, 225, 225);
+        color: black;
+        border-radius: 10px;
+        border: none;
+        margin: 55px;
+        margin-left: 100px;
+        cursor: pointer;
+
+    }
+</style>
+<body>
+<div class="logo">
+    Online Class
+</div>
+
+<div class="container">
+    <div class="video">
+        <h1>Upload Your Recorded Class </h1>
+        <form action="" method="post" >
+            <input type="file" accept="video/mp4,video/x-m4v,video/*" enctype="multipart/form-data" class="vidup"><br>
+            <input type="submit" class="button">
+            
+        </form>
+
+    </div>
+</div>
+
+    
+</body>
+</html>
