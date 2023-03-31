@@ -41,7 +41,7 @@ Using <a href = "https://github.com/AklimaRimi/Relax-Teacher/blob/main/data/data
  |  Model | Batch Size | Accuracy|
  |--------|------------|---------|
  |emotion-english-distilroberta-base| 2| 21%|
- |emotion-english-distilroberta-base| 4| 212%|
+ |emotion-english-distilroberta-base| 4| 21.2%|
  |emotion-english-distilroberta-base| 16| 41%|
  |emotion-english-distilroberta-base| 32| 21%|
  |distilroberta-base| 2| 11%|
