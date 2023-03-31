@@ -36,7 +36,7 @@ def vid_to_text(x):
     
     file_data_base64 = base64.b64encode(x).decode('utf-8')
 
-    response = requests.post("https://rimi98-online-class.hf.space/run/predict",
+    response = requests.post("https://rimi98-relax-teacher.hf.space/run/predict",
         json={
                 "data": [
                     {"name": "video.mp4", "data": file_data_base64},
