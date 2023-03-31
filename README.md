@@ -40,14 +40,14 @@ Using <a href = "https://github.com/AklimaRimi/Relax-Teacher/blob/main/data/data
  
  |  Model | Batch Size | Accuracy|
  |--------|------------|---------|
- |emotion-english-distilroberta-base| 2| .21|
- |emotion-english-distilroberta-base| 4| .212|
- |emotion-english-distilroberta-base| 16| .41|
- |emotion-english-distilroberta-base| 32| .21|
- |distilroberta-base| 2| .11|
- |distilroberta-base| 4| .23|
- |distilroberta-base| 16| .51|
- |distilroberta-base| 32| .98|
+ |emotion-english-distilroberta-base| 2| 21%|
+ |emotion-english-distilroberta-base| 4| 212%|
+ |emotion-english-distilroberta-base| 16| 41%|
+ |emotion-english-distilroberta-base| 32| 21%|
+ |distilroberta-base| 2| 11%|
+ |distilroberta-base| 4| 23%|
+ |distilroberta-base| 16| 51%|
+ |distilroberta-base| 32| 98%|
  
  So this is obvious that I kept <strong>distilroberta-base</strong> model further use <a href = "https://github.com/AklimaRimi/Relax-Teacher/blob/main/notebook/model_train_test.ipynb">Code</a>.
  
@@ -75,9 +75,8 @@ Using <a href = "https://github.com/AklimaRimi/Relax-Teacher/blob/main/data/data
  
  <h2>Interface</h2>
  
- I was thinking, I would make is project free through a website. For making the website I used Flask Framework.
- I made very simple UI nothing has complex in it. All of my work using flask and huggingface api is <a href = 'https://github.com/AklimaRimi/Relax-Teacher/tree/main/flask'>here</a><br><br>
- 
+I was thinking, I would make it free through a website. For making the website, I used the Flask Framework.
+ I made a very simple UI nothing complex is in it. All of my work using flask and the huggingface API is <a href = 'https://github.com/AklimaRimi/Relax-Teacher/tree/main/flask'>here</a><br><br>
  You can use my <a href = "">website.</a><br><br>
  
  Here is demo images of my website..<br>
@@ -90,9 +89,26 @@ Using <a href = "https://github.com/AklimaRimi/Relax-Teacher/blob/main/data/data
  <ol>
  <li>"Subject: Astrology", Here Astrology is ML generated. The video summary classified this video's summary as Astrology</li>
  <li>The text in "context" is automatically generated from video's voice.</li>
- <li>And lastly the text in "Summary" automatically generated from "Context"</li>
+ <li>And lastly, the text in "Summary" automatically generated from "Context"</li>
  </ol>
  
  </ul>
 <h1>Problem That I've Faced and Solution</h1>
+
+While I was working on this project, I faced several problems. <br><br>
+    1. Converting video to an audio file. At first, I used  `subprocess` to convert `mp4` to "wav." But this process is slow. Then I used `moviepy` library, which was far faster than `subprocess`.<br>    
+    2. The next problem that I had faced was the conversion of audio to text. I directly used `Huggingface` model, which gave me the text but only 30 seconds of video. Finally, I used `Pipeline` from transformars. This process helped get full text in a video in a faster way. <br>    
+    3. The next problem was that I tried to convert the full text into a summary. That gave me errors multiple times. After a while, I found a resource on Youtube, that I have to make `Chunks` using whole text. Then I can feed this to a model for Summary. `chunk` is make whole text to sub-text with 512 words. 
+    
+    
+<h1>Conclusion</h1>
+
+This project is made for our honorable senior teachers, who are the nation builders. Please show some respect towards them.
+
+If you think this project needs some changes or you want to contribute, please pull a request.
+
+Thanks.
+
+
+  
 
