@@ -3,7 +3,6 @@ import requests
 from werkzeug.utils import secure_filename
 import base64
 import os
-import cv2
 
 app = Flask(__name__)
 
