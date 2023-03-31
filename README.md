@@ -12,8 +12,8 @@ so a teacher only needs to upload his or her recorded class; after that, my webs
 <ul>
 <li>
 <h2>Data Collection</h2><br>
-As my input format is recorded class, which is video format, I've decided to collect data from `YouTube` as there are free tutorial videos there.
-I want to express my graditute to <b>CrashCourse</b>, <b>Art of Wei</b>, <b>Khan Academy</b>, <b>Professor Dave Explains</b>, <b>thenewboston</b>, <b>The School of Life</b> YouTube mentors for your amazing Tutorials made education easy for all and I used your data.
+As my input format is recorded class, which is video format, I've decided to collect data from `YouTube` as there have free tutorial videos.<br>
+I want to express my graditute to <b>CrashCourse</b>, <b>Art of Wei</b>, <b>Khan Academy</b>, <b>Professor Dave Explains</b>, <b>thenewboston</b>, <b>The School of Life</b> YouTube mentors for your amazing Tutorials made education easy for all and I used your data.<br>
 I collected videos based on different subjects. Subjects are <b>History</b>, <b>Art</b>, <b>Physics</b>,
 <b>Chemistry</b>, <b>Biology</b>, <b>Astrology</b>, <b>Literature</b>, <b>Philosophy</b>, <b>Politics</b>,
 <b>Economics</b>, <b>Phychology</b>, <b>Sociology</b>. <a href='https://github.com/AklimaRimi/Relax-Teacher/blob/main/scripts/download-vids.py'>Code here</a>
