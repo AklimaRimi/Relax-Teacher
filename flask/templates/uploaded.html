@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
     <title>Class</title>
 </head>
 <style>
     body{
         background-color: black;
         color: rgb(227, 225, 225);
+        font-family: 'Raleway', sans-serif;
     }
     .subject{
         width: 99vw;
@@ -76,11 +80,13 @@
     .summ{
         padding: 10px;
         text-align: justify;
+        text-overflow: clip;
+        overflow: hidden;
     }
 </style>
 <body>
     <div class="subject"> 
-        <h1>Subject</h1>
+        <h1>Subject: {{label}}</h1>
     </div>
 
     <div class="container">
@@ -88,15 +94,16 @@
             <div class="two-row1">
                 <div class="class"><h3>Class</h3></div>
                 <div class="vid">
-                    <iframe width="870px" height="320px"
-                        src="https://www.youtube.com/embed/tgbNymZ7vqY">
-                    </iframe>
+                    <video width="870px" height="320px" controls>
+                    <source src="{{ url_for('static', filename = video)}}" type = "video/mp4">
+                    </video>
                 </div>
             </div>
             <div class="two-row2">
                 <div class="class"><h3>Summary</h3></div>
                 <div class="summ">
-                    <p>Since I first published this little script it had a bit of community support and a few good folks worked on expanding it, so not it can do a bit more than just splitting videos in equal chunks. It can split videos into unequal chunks using a manifest file, pass on extra options to FFMPEG to say do additional processing. Check out the readme file for all the options.</p>
+                    <p>{{summary}}</p>
+
                 </div>
             </div>
         </div>
@@ -104,15 +111,7 @@
             <div class="class"><h3>Context</h3></div>
             <div class="summ">
                 <p>
-                    UPDATE 2: Well this script has outlived my old blog looks like. Parking the original article about it here.
-
-                    UPDATE: The source code for this simple script has been moved to GitHub, get it here: https://github.com/c0decracker/video-splitter
-                    
-                    Recently I needed to upload a whole bunch of long video files. Maximum allowed length for each video was just few minutes, while the actual length of files I tried to upload was about an hour long each. FFmpeg is really great for splitting the video files and Python is quite handy for automating the task.
-                    
-                    Naturally combining the two together in this handy little script. The script takes a video file and a chunk size in seconds and splits the video file into chunks using ffmpeg, so each chunk is self contained, playable video.
-                    
-                    Since I first published this little script it had a bit of community support and a few good folks worked on expanding it, so not it can do a bit more than just splitting videos in equal chunks. It can split videos into unequal chunks using a manifest file, pass on extra options to FFMPEG to say do additional processing. Check out the readme file for all the options. 
+                    {{text}}
                 </p>
             </div>
         </div>
