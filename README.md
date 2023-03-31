@@ -2,7 +2,7 @@
 <h1 style="text-align:centre; width: 100vw; color: red;">Relax Teacher</h1><hr>
 
 <h1>Motive</h1>
-<p>My inspiration came from the aftermath of the 2020 lockdown. A powerful reason had brought every school, college, and university together. We were aware of a new way to serve our education at the time, known as "Online Class."
+<p>My inspiration came from the aftermath of the 2020 lockdown. A powerful reason had brought that every school, college, and university, everything was closed. We were aware of a new way to serve our education at the time, known as "Online Class."
 That online class has both positive and negative aspects. But what saddened or disappointed me was that many students did not 
 respect their senior teachers simply because they were unfamiliar with computer/technology stuff, and as a result, our respected teachers made a few mistakes. Students mocked and trolled them, which was wrong. So I created this simple website with Ai/ML to assist our esteemed teachers. It is automated, 
 so a teacher only needs to uploadhis or her recorded class; after that, my website will save the recorded video in the appropriate folder as 'subject' and also save it in text format with a summary of that class.
