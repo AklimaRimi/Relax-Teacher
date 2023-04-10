@@ -30,7 +30,7 @@ This step was very important for this project. For the sake of this project, I n
  </li>
  
  <li>
- <h2>Model Trainning </h2>
+ <h2>Model Training </h2>
 Using <a href = "https://github.com/AklimaRimi/Relax-Teacher/blob/main/data/datawithSummary%20(1).csv">this dataset, </a>, I started training a model and evaluated using <b>Blurr.</b> <br> <b>Blurr: Blurr is a new technique for teaching a model using a dataset. The teaching method is combined by <b>HuggingFace</b> and <b>Fastai</b> which makes it faster to train a model and get impressive accuracy. <br><br>  For training, I used the built-in model from <a href = "https://huggingface.co/models?pipeline_tag=text-classification&sort=downloads">HuggingFace</a> I used two models <br> 1. distilroberta-base  and<br>  2. j-hartmann/emotion-english-distilroberta-base <br>  And different <b>Batch sizes</b> : 2, 4, 16, 32
 
  </li>
