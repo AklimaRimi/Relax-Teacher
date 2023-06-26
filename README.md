@@ -4,7 +4,11 @@
 <h1 style="text-align:centre; width: 100vw; color: red;">Relax Teacher</h1><hr>
 
 <h1>Motive</h1>
-<p>My inspiration came from the aftermath of the 2020 lockdown. A powerful reason had brought that every school, college, and university, everything was closed. We were aware of a new way to serve our education at the time, known as "Online Class."
+
+[](https://github.com/AklimaRimi/Relax-Teacher/assets/59701116/c2543769-73b5-4791-9a69-eaedbff8cc52)
+
+
+<p>My inspiration came from the aftermath of the 2020 lockdown. A powerful reason brought that in every school, college, and university, everything was closed. We were aware of a new way to serve our education at the time, known as "Online Class."
 That online class has both positive and negative aspects. But what saddened or disappointed me was that many students did not 
 respect their senior teachers simply because they were unfamiliar with computer/technology stuff, and as a result, our respected teachers made a few mistakes. Students mocked and trolled them, which was wrong. So I created this simple website with Ai/ML to assist our esteemed teachers. It is automated, 
 so a teacher only needs to upload his or her recorded class; after that, my website will save the recorded video in the appropriate folder as 'subject' and also save it in text format with a summary of that class.
@@ -26,7 +30,7 @@ I collected videos based on different subjects. Subjects are <b>History</b>, <b>
 This step was very important for this project. For the sake of this project, I need to convert <strong>Video</strong> to <strong>Audio</strong>, then strong>Audio</strong> to <strong>Text</strong>. And finally from the <b>Text</b> to <b>Summary</b>. I used this <b>Summay</b> for classification of the subject the uploaded video is teaching. <br><br>
   - For video to audio conversion, I used <strong>Moviepy</strong> Python library . <br><br>
   - To convert this audio to text, I used <strong>HuggingFace</strong> pretrained model. I tried several models, namely <b>openai/whisper-base.en, whisper-large, whisper-tiny</b> and I found <b>openai/whisper-base.en</b> more accurate. <a href ="https://github.com/AklimaRimi/Relax-Teacher/blob/main/scripts/audioToText.ipynb" > Code</a><br><br>
-  - And lastly for text to summary again, I tried <b> HuggingFace</b> buit-in models  to compare the models and use the best one, models were <b>"facebook/bart-large-cnn","philschmid/bart-large-cnn-samsum", "google/pegasus-cnn_dailymail" , "sshleifer/distilbart-cnn-12-6"</b> . I found "sshleifer/distilbart-cnn-12-6" is very fast and finalized this model. <a href='https://github.com/AklimaRimi/Relax-Teacher/blob/main/notebook/text_augmentation.ipynb'>Code</a><br><br>   
+  - And lastly for text to summary again, I tried <b> HuggingFace</b> buit-in models to compare the models and use the best one, models were <b>"facebook/bart-large-cnn","philschmid/bart-large-cnn-samsum", "google/pegasus-cnn_dailymail" , "sshleifer/distilbart-cnn-12-6"</b> . I found "sshleifer/distilbart-cnn-12-6" is very fast and finalized this model. <a href='https://github.com/AklimaRimi/Relax-Teacher/blob/main/notebook/text_augmentation.ipynb'>Code</a><br><br>   
  </li>
  
  <li>
