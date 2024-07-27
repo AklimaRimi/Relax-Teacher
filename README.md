@@ -1,7 +1,7 @@
 
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FAklimaRimi%2FRelax-Teacher&label=views&countColor=%23d9e3f0)
 
-<h1 style="text-align:centre; width: 100vw; color: red;">Relax Teacher</h1><hr>
+<h1 style="text-align:centre; width: 100vw; color: red;">Relax Teacher . </h1><hr>
 
 <h1>Motive</h1>
 
